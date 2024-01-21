@@ -2,7 +2,6 @@
 
 
 import { createContext, useEffect, useState } from "react";
-import { createContext, useEffect, useState } from "react";
 import { URL } from "../url"
 
 export const UserContext=createContext({})
