@@ -4,7 +4,7 @@ const User=require('../models/User')
 const bcrypt=require('bcrypt')
 const Post=require('../models/Post')
 const Comment=require('../models/Comment')
-const verifyToken = require('../verifyTokens')
+const verifyToken = require('../verifyToken')
 
 
 //UPDATE
@@ -16,11 +16,13 @@ router.put("/:id",verifyToken,async (req,res)=>{
         }
         const updatedUser=await User.findByIdAndUpdate(req.params.id,{$set:req.body},{new:true})
         res.status(200).json(updatedUser)
+
     }
     catch(err){
         res.status(500).json(err)
     }
 })
+
 
 //DELETE
 router.delete("/:id",verifyToken,async (req,res)=>{
@@ -29,12 +31,12 @@ router.delete("/:id",verifyToken,async (req,res)=>{
         await Post.deleteMany({userId:req.params.id})
         await Comment.deleteMany({userId:req.params.id})
         res.status(200).json("User has been deleted!")
+
     }
     catch(err){
         res.status(500).json(err)
     }
 })
-
 
 
 //GET USER
@@ -48,11 +50,6 @@ router.get("/:id",async (req,res)=>{
         res.status(500).json(err)
     }
 })
-
-
-
-
-
 
 
 module.exports=router

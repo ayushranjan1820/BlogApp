@@ -15,7 +15,7 @@ const CommentSchema=new mongoose.Schema({
     },
     userId:{
         type:String,
-        required:false,
+        required:true
     }
 },{timestamps:true})
 
