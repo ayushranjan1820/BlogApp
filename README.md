@@ -52,13 +52,12 @@ There is also a search bar for searching posts directly from top of the website.
 Start the development server:
 
 Frontend :
-
-```bash
-   npm run dev
+bash
+npm run dev
 
 Backend :
-```bash
-   nodemon index.ja
+bash
+nodemon index.ja
 
 Open your browser and navigate to http://localhost:5000.
 Explore the blog website, create an account, and start creating and editing your blog posts!
