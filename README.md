@@ -32,7 +32,7 @@ There is also a search bar for searching posts directly from top of the website.
 - **Express.js:** Backend framework for building a robust and scalable server.
 - **React.js:** Frontend library for building a dynamic and interactive user interface.
 - **Node.js:** JavaScript runtime for server-side development.
-- **Postman and Thunder API** For testing APIs
+- **Postman and Thunder API :** For testing APIs
 
 ## Getting Started
 
@@ -48,15 +48,17 @@ There is also a search bar for searching posts directly from top of the website.
    ```bash
    git clone https://github.com/ayushranjan1820/BlogApp.git
 
-### Usage
+## Usage
 Start the development server:
 
 Frontend :
-bash
-npm run dev
+
+```bash
+   npm run dev
 
 Backend :
-nodemon index.js
+```bash
+   nodemon index.ja
 
 Open your browser and navigate to http://localhost:5000.
 Explore the blog website, create an account, and start creating and editing your blog posts!
