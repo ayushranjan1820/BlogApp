@@ -16,7 +16,7 @@ const CreatePost = () => {
     const {user}=useContext(UserContext)
     const [cat,setCat]=useState("")
     const [cats,setCats]=useState([])
-console.log(file)
+    console.log(file)
     const navigate=useNavigate()
 
     const deleteCategory=(i)=>{
